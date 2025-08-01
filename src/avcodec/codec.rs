@@ -162,6 +162,16 @@ settable!(AVCodecContext {
     strict_std_compliance: i32,
     gop_size: i32,
     max_b_frames: i32,
+    rc_min_rate: i64,
+    rc_max_rate: i64,
+    rc_buffer_size: i32,
+    keyint_min: i32,
+    refs: i32,
+    qmin: i32,
+    qmax: i32,
+    profile: i32,
+    level: i32,
+    compression_level: i32,
 });
 
 impl AVCodecContext {
